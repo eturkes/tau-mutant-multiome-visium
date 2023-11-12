@@ -132,6 +132,7 @@ if (file.exists(rds)) {
     rep(sub("\\/.*", "", file_list[3]), ncol(files[[3]])),
     rep(sub("\\/.*", "", file_list[4]), ncol(files[[4]]))
   )
+  seurat$group <- sub("_[^_]+$", "", seurat$sample)
 
   ribo <- grep("^RP[SL][[:digit:]]", rownames(seurat), ignore.case = TRUE)
   sce <- as.SingleCellExperiment(seurat)

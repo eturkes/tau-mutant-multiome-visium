@@ -34,6 +34,7 @@ RUN apt-get update \
         -e "BiocManager::install('SingleCellExperiment')" \
         -e "BiocManager::install('scuttle')" \
         -e "BiocManager::install('glmGamPoi')" \
+        -e "BiocManager::install('limma')" \
     && apt-get clean \
     && rm -Rf /var/lib/apt/lists/ \
         /tmp/downloaded_packages/ \
