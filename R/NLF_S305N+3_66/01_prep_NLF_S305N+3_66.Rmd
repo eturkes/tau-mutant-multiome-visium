@@ -1,5 +1,5 @@
 ---
-title: "01 Prep - NLF S305N 67"
+title: "01 Prep - NLF S305N+3 66"
 author:
   - name: "Emir Turkes"
 date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
@@ -18,7 +18,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(
     inputFile, encoding = encoding,
-    output_file = file.path("..", "..", "results", unlist(strsplit(getwd(), "/"))[6], "01_prep_NLF_S305N_67.html")
+    output_file = file.path("..", "..", "results", unlist(strsplit(getwd(), "/"))[6], "01_prep_NLF_S305N+3_66.html")
   )})
 ---
 
@@ -81,7 +81,7 @@ source(file.path("..", "utils.R"))
 analysis_no <- 1
 data_name <- unlist(strsplit(getwd(), "/"))[6] # Name of dataset derived from path.
 
-data_dir <- file.path("..", "..", "data", "tau-mutant-multiome-visium", "cellranger-S4_1", "outs")
+data_dir <- file.path("..", "..", "data", "tau-mutant-multiome-visium", "cellranger-S3", "outs")
 cache_dir <- file.path("..", "..", "tmp", "cache", data_name, paste0("0", analysis_no)) # Intermediate data objects.
 if (!dir.exists(cache_dir)) {
   dir.create(cache_dir, recursive = TRUE)

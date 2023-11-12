@@ -1,5 +1,5 @@
 ---
-title: "01 Prep - S305N 394"
+title: "01 Prep - S305N+3 394"
 author:
   - name: "Emir Turkes"
 date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
@@ -18,7 +18,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(
     inputFile, encoding = encoding,
-    output_file = file.path("..", "..", "results", unlist(strsplit(getwd(), "/"))[6], "01_prep_S305N_394.html")
+    output_file = file.path("..", "..", "results", unlist(strsplit(getwd(), "/"))[6], "01_prep_S305N+3_394.html")
   )})
 ---
 
